@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MCUI test page</title>
+        <link rel="stylesheet" type="text/css" href="mcui.css"/>
+        <link rel="stylesheet" type="text/css" href="animations.css"/>
+        <meta charset="UTF-8"/>
+
+        <style>
+            body {
+                background-color: #444;
+                color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Crafting Grid</h1>
+        <div>
+            <span class="mcui mcui-crafting pixelart">
+                <span class="mcui-crafting-input">
+                    <span class="mcui-inventory-row">
+                        <span class="mcui-inventory-slot"></span><!--
+                     --><span class="mcui-inventory-slot"></span><!--
+                     --><span class="mcui-inventory-slot"></span>
+                    </span>
+                    <span class="mcui-inventory-row">
+                        <span class="mcui-inventory-slot"></span><!--
+                     --><span class="mcui-inventory-slot">
+                            <span class="mcui-inventory-item" data-tooltip="Oak Log">
+                                <span class="mcui-sprite" data-id="oak_log"></span>
+                            </span>
+                        </span><!--
+                     --><span class="mcui-inventory-slot"></span>
+                    </span>
+                    <span class="mcui-inventory-row">
+                        <span class="mcui-inventory-slot"></span><!--
+                     --><span class="mcui-inventory-slot"></span><!--
+                     --><span class="mcui-inventory-slot"></span>
+                    </span>
+                </span>
+                <span class="mcui-crafting-arrow">
+                    <br/>
+                </span>
+                <span class="mcui-crafting-output">
+                    <span class="mcui-inventory-slot mcui-inventory-slot-large">
+                        <span class="mcui-inventory-item" data-tooltip="Oak Planks">
+                            <span class="mcui-sprite" data-id="oak_planks"></span>
+                            <span class="mcui-inventory-stacksize">4</span>
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </div>
+        <br/>
+        <div>
+            <span class="mcui mcui-crafting pixelart">
+                <span class="mcui-crafting-input">
+                    <span class="mcui-inventory-row">
+                        <span class="mcui-inventory-slot"></span><!--
+                     --><span class="mcui-inventory-slot"></span><!--
+                     --><span class="mcui-inventory-slot"></span>
+                    </span>
+                    <span class="mcui-inventory-row">
+                        <span class="mcui-inventory-slot">
+                            <span class="mcui-inventory-item" data-tooltip="Tripwire Hook">
+                                <span class="mcui-sprite" data-id="tripwire_hook"></span>
+                            </span>
+                        </span><!--
+                     --><span class="mcui-inventory-slot">
+                            <span class="mcui-inventory-item" data-tooltip="Chest">
+                                <span class="mcui-sprite" data-id="chest"></span>
+                            </span>
+                        </span><!--
+                     --><span class="mcui-inventory-slot"></span>
+                    </span>
+                    <span class="mcui-inventory-row">
+                        <span class="mcui-inventory-slot"></span><!--
+                     --><span class="mcui-inventory-slot"></span><!--
+                     --><span class="mcui-inventory-slot"></span>
+                    </span>
+                </span>
+                <span class="mcui-crafting-arrow">
+                    <br/>
+                </span>
+                <span class="mcui-crafting-output">
+                    <span class="mcui-inventory-slot mcui-inventory-slot-large">
+                        <span class="mcui-inventory-item" data-tooltip="Trapped Chest">
+                            <span class="mcui-sprite" data-id="trapped_chest"></span>
+                        </span>
+                    </span>
+                </span>
+                <span class="mcui-icons">
+                    <span class="mcui-shapeless" title="This recipe is shapeless, the inputs may be placed in any arrangement in the crafting grid."><br/></span>
+                </span>
+            </span>
+        </div>
+
+        <h1>Trading</h1>
+        <div>
+            <span class="mcui mcui-trading pixelart">
+                <span class="mcui-label" style="text-align: center;">Trade</span>
+                <span class="mcui-trade">
+                    <span class="mcui-trade-item trade-item-one">
+                        <span class="mcui-inventory-item" data-tooltip="Emerald">
+                            <span class="mcui-sprite" data-id="emerald"></span>
+                        </span>
+                    </span>
+                    <span class="mcui-trade-item trade-item-two">
+                        <span class="mcui-inventory-item" data-tooltip="Dirt">
+                            <span class="mcui-sprite" data-id="dirt"></span>
+                        </span>
+                    </span>
+                    <span class="mcui-trade-arrow">
+                        <br/>
+                    </span>
+                    <span class="mcui-trade-item mcui-trade-output">
+                        <span class="mcui-inventory-item" data-tooltip="Diamond">
+                            <span class="mcui-sprite" data-id="diamond"></span>
+                            <span class="mcui-inventory-stacksize">64</span>
+                        </span>
+                    </span>
+                </span>
+                <span class="mcui-trade">
+                    <span class="mcui-trade-item trade-item-one">
+                        <span class="mcui-inventory-item" data-tooltip="Ether" data-tooltip-description="100 units of your finest currency">
+                            <span class="mcui-sprite" data-id="eternalrealms:ether"></span>
+                            <span class="mcui-inventory-stacksize">100</span>
+                        </span>
+                    </span>
+                    <span class="mcui-trade-item trade-item-two"></span>
+                    <span class="mcui-trade-arrow">
+                        <br/>
+                    </span>
+                    <span class="mcui-trade-item mcui-trade-output">
+                        <span class="mcui-inventory-item" data-tooltip="Oak Log">
+                            <span class="mcui-sprite" data-id="oak_log"></span>
+                            <span class="mcui-inventory-stacksize">64</span>
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <h1>Hopper</h1>
+        <div>
+            <span class="mcui mcui-inventory pixelart">
+                <span class="mcui-inventory-row">
+                    <span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="Oak Planks">
+                            <span class="mcui-sprite" data-id="oak_planks"></span>
+                            <span class="mcui-inventory-stacksize">41</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="Stone">
+                            <span class="mcui-sprite" data-id="stone"></span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="Stone">
+                            <span class="mcui-sprite" data-id="stone"></span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="Stone">
+                            <span class="mcui-sprite" data-id="stone"></span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="Stone">
+                            <span class="mcui-sprite" data-id="stone"></span>
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <h1>Generic Inventory</h1>
+        <h3>One Row</h3>
+        <div>
+            <span class="mcui mcui-inventory pixelart">
+                <span class="mcui-inventory-row">
+                    <span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span>
+                </span>
+            </span>
+        </div>
+        <h3>Two Rows</h3>
+        <div>
+            <span class="mcui mcui-inventory pixelart">
+                <span class="mcui-inventory-row">
+                    <span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span>
+                </span>
+                <span class="mcui-inventory-row">
+                    <span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span>
+                </span>
+            </span>
+        </div>
+
+        <h3>Three Rows + Hotbar</h3>
+        <div>
+            <span class="mcui mcui-inventory pixelart">
+                <span class="mcui-inventory-row">
+                    <span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span>
+                </span>
+                <span class="mcui-inventory-row">
+                    <span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span>
+                </span>
+                <span class="mcui-inventory-row">
+                    <span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span>
+                </span>
+                <span class="mcui-inventory-row mcui-inventory-hotbar">
+                    <span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span><!--
+                 --><span class="mcui-inventory-slot"></span>
+                </span>
+            </span>
+        </div>
+        
+        <h1>Combined</h1>
+        <div>
+            <span class="mcui mcui-rounded mcui-combined">
+                <span class="mcui-crafting pixelart">
+                    <span class="mcui-label">Crafting</span>
+                    <span class="mcui-crafting-input">
+                        <span class="mcui-inventory-row">
+                            <span class="mcui-inventory-slot"></span><!--
+                        --><span class="mcui-inventory-slot"></span><!--
+                        --><span class="mcui-inventory-slot"></span>
+                        </span>
+                        <span class="mcui-inventory-row">
+                            <span class="mcui-inventory-slot"></span><!--
+                        --><span class="mcui-inventory-slot">
+                                <span class="mcui-inventory-item" data-tooltip="Oak Log">
+                                    <span class="mcui-sprite" data-id="oak_log"></span>
+                                </span>
+                            </span><!--
+                        --><span class="mcui-inventory-slot"></span>
+                        </span>
+                        <span class="mcui-inventory-row">
+                            <span class="mcui-inventory-slot"></span><!--
+                        --><span class="mcui-inventory-slot"></span><!--
+                        --><span class="mcui-inventory-slot"></span>
+                        </span>
+                    </span>
+                    <span class="mcui-crafting-arrow">
+                        <br/>
+                    </span>
+                    <span class="mcui-crafting-output">
+                        <span class="mcui-inventory-slot mcui-inventory-slot-large">
+                            <span class="mcui-inventory-item" data-tooltip="Oak Planks">
+                                <span class="mcui-sprite" data-id="oak_planks"></span>
+                                <span class="mcui-inventory-stacksize">4</span>
+                            </span>
+                        </span>
+                    </span>
+                </span>
+                <span class="mcui-inventory pixelart">
+                    <span class="mcui-label">Inventory</span>
+                    <span class="mcui-inventory-row">
+                        <span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span>
+                    </span>
+                    <span class="mcui-inventory-row">
+                        <span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span>
+                    </span>
+                    <span class="mcui-inventory-row">
+                        <span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span>
+                    </span>
+                    <span class="mcui-inventory-row mcui-inventory-hotbar">
+                        <span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span><!--
+                    --><span class="mcui-inventory-slot"></span>
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <h1>Practical Examples</h1>
+        <h3>Market Stall</h3>
+        <div>
+            <span class="mcui mcui-rounded mcui-inventory pixelart">
+                <span class="mcui-label">Market Stall</span>
+                <span class="mcui-inventory-row">
+                    <span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="16 × Terracotta" data-tooltip-description="100 Ether">
+                            <span class="mcui-sprite" data-id="terracotta"></span>
+                            <span class="mcui-inventory-stacksize">16</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="16 × Dark Prismarine" data-tooltip-description="100 Ether">
+                            <span class="mcui-sprite" data-id="dark_prismarine"></span>
+                            <span class="mcui-inventory-stacksize">16</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="16 × Sea Lanterns" data-tooltip-description="150 Ether">
+                            <span class="mcui-sprite" data-id="sea_lantern"></span>
+                            <span class="mcui-inventory-stacksize">16</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="16 × Soul Sand" data-tooltip-description="150 Ether">
+                            <span class="mcui-sprite" data-id="soul_sand"></span>
+                            <span class="mcui-inventory-stacksize">16</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="16 × Obsidian" data-tooltip-description="300 Ether">
+                            <span class="mcui-sprite" data-id="obsidian"></span>
+                            <span class="mcui-inventory-stacksize">16</span>
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <h3>Nether Transit</h3>
+        <div>
+            <span class="mcui mcui-rounded mcui-inventory pixelart">
+                <span class="mcui-inventory-row">
+                    <span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="Entrance" data-tooltip-description="(z:-2525)">
+                            <span class="mcui-sprite" data-id="filled_map"></span>
+                            <span class="mcui-inventory-stacksize">1</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="Market Island" data-tooltip-description="(z:-3095)">
+                            <span class="mcui-sprite" data-id="emerald"></span>
+                            <span class="mcui-inventory-stacksize">2</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="Pirate Islands" data-tooltip-description="(z:-3285)">
+                            <span class="mcui-sprite" data-id="gold_ingot"></span>
+                            <span class="mcui-inventory-stacksize">3</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="New Rome" data-tooltip-description="(New name and theme TBD)">
+                            <span class="mcui-sprite" data-id="netherite_helmet"></span>
+                            <span class="mcui-inventory-stacksize">4</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="Azmar">
+                            <span class="mcui-sprite" data-id="trident"></span>
+                            <span class="mcui-inventory-stacksize">5</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="New Withervale" data-tooltip-description="(z:-3495)">
+                            <span class="mcui-sprite" data-id="wither_skeleton_skull"></span>
+                            <span class="mcui-inventory-stacksize">6</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="Blaze Farm / Piglin Barter">
+                            <span class="mcui-sprite blaze-barter" data-id="blaze_rod"></span>
+                            <span class="mcui-inventory-stacksize">7</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="Guardian / Gunpowder Farms">
+                            <span class="mcui-sprite prismarine-gunpowder" data-id="prismarine_shard"></span>
+                            <span class="mcui-inventory-stacksize">8</span>
+                        </span>
+                    </span><!--
+                 --><span class="mcui-inventory-slot">
+                        <span class="mcui-inventory-item" data-tooltip="Taiga Town" data-tooltip-description="(New name TBD)">
+                            <span class="mcui-sprite" data-id="spruce_sapling"></span>
+                            <span class="mcui-inventory-stacksize">9</span>
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div id="tooltip" class="tooltip" hidden>
+            <span class="label"></span>
+            <span class="description"></span>
+        </div>
+        <script src="js/tooltip.js"></script>
+    </body>
+</html>

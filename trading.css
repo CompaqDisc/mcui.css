@@ -1,0 +1,44 @@
+.mcui-trading {
+    background: #8b8b8b no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #fff #fff #373737;
+}
+
+.mcui-trade > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mcui-trade {
+    background: url('images/trade_bg.png') no-repeat;
+    width: 176px;
+    height: 40px;
+    display: block;
+}
+
+.mcui-trade-item {
+    position: relative;
+    display: inline-block;
+    top: 2px;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.trade-item-one {
+    margin-left: 12px;
+}
+
+.trade-item-two {
+    margin-left: 16px;
+}
+
+.mcui-trade-arrow {
+    background: url('images/trade_arrow.png') no-repeat;
+    width: 20px;
+    height: 19px;
+    margin:10px 4px 0;
+}

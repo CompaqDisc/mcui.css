@@ -1,0 +1,34 @@
+.mcui-crafting > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mcui-crafting .mcui-inventory-row {
+    display: block;
+}
+
+.mcui-crafting-arrow {
+    background: url('images/crafting_arrow_long.png') no-repeat;
+    width: 48px;
+    height: 32px;
+    margin: 40px 8px 0;
+}
+
+.mcui-crafting-output {
+    margin-top: 28px;
+}
+
+.mcui-crafting .mcui-icons {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+.mcui-crafting .mcui-shapeless {
+    display: inline-block;
+    background-image: url('images/shapeless.png');
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 15px;
+    cursor: help;
+}

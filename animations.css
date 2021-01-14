@@ -1,0 +1,35 @@
+@keyframes prismarine-gunpowder {
+
+    50% {
+        background-position: -160px -3520px;
+    }
+
+    to {
+        background-position: -864px -3488px;
+    }
+}
+
+.prismarine-gunpowder {
+    animation-name: prismarine-gunpowder;
+    animation-duration: 2s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes blaze-barter {
+
+    50% {
+        background-position: -448px -640px;
+    }
+
+    to {
+        background-position: -320px -2496px;
+    }
+}
+
+.blaze-barter {
+    animation-name: blaze-barter;
+    animation-duration: 2s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}

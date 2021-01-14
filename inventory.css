@@ -1,0 +1,64 @@
+.mcui-inventory .mcui-inventory-row {
+    display: block;
+}
+
+.mcui-inventory-hotbar {
+    padding-top: 8px;
+}
+
+.mcui-inventory-slot {
+    position: relative;
+    display: inline-block;
+    background: #8b8b8b no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #fff #fff #373737;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.mcui-inventory-slot::before, .mcui-inventory-slot::after {
+    content: "";
+    position: absolute;
+    background-color: #8b8b8b;
+    height: 2px;
+    width: 2px;
+    pointer-events: none;
+}
+
+.mcui-inventory-slot::before {
+    bottom: -2px;
+    left: -2px;
+}
+
+.mcui-inventory-slot::after {
+    top: -2px;
+    right: -2px;
+}
+
+.mcui-inventory-slot-large {
+    padding: 8px;
+}
+
+.mcui-inventory-item {
+    position: relative;
+    display: block;
+    margin: -2px;
+    padding: 2px;
+    width: 32px;
+    height: 32px;
+}
+
+.mcui-inventory-stacksize {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: Minecraftia, sans-serif !important;
+    font-weight: normal !important;
+    color: #fff !important;
+    text-shadow: 2px 2px 0 #3f3f3f;
+    z-index: 2;
+}

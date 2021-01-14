@@ -1,0 +1,232 @@
+.mcui-sprite {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+
+    display: inline-block;
+    background-repeat: no-repeat;
+
+    background-image: url('images/sprites.png');
+}
+
+/* Stone Types */
+.mcui-sprite[data-id="stone"] {
+    background-position: -224px -992px;
+}
+
+/* Dirt, Gravel, Sand, etc... */
+.mcui-sprite[data-id="dirt"] {
+    background-position: -576px -960px;
+}
+
+.mcui-sprite[data-id="obsidian"] {
+    background-position: -288px -3360px;
+}
+
+/* Terracotta */
+.mcui-sprite[data-id="terracotta"] {
+    background-position: -640px -3360px;
+}
+
+.mcui-sprite[data-id="white_terracotta"] {
+    background-position: -672px -768px;
+}
+
+.mcui-sprite[data-id="orange_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="magenta_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="light_blue_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="yellow_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="lime_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="pink_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="gray_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="light_gray_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="cyan_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="purple_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="blue_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="brown_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="green_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="red_terracotta"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="black_terracotta"] {
+    background-position: -0px -0px;
+}
+
+/* Planks */
+.mcui-sprite[data-id="oak_planks"] {
+    background-position: -192px -896px;
+}
+
+.mcui-sprite[data-id="spruce_planks"] {
+    background-position: -0px -928px;
+}
+
+.mcui-sprite[data-id="birch_planks"] {
+    background-position: -832px -832px;
+}
+
+.mcui-sprite[data-id="jungle_planks"] {
+    background-position: -992px -864px;
+}
+
+.mcui-sprite[data-id="acacia_planks"] {
+    background-position: -672px -832px;
+}
+
+.mcui-sprite[data-id="dark_oak_planks"] {
+    background-position: -512px -864px;
+}
+
+.mcui-sprite[data-id="crimson_planks"] {
+    background-position: -544px -128px;
+}
+
+.mcui-sprite[data-id="warped_planks"] {
+    background-position: -576px -128px;
+}
+
+/* Logs */
+.mcui-sprite[data-id="oak_log"] {
+    background-position: -160px -3424px;
+}
+
+/* Containers */
+.mcui-sprite[data-id="chest"] {
+    background-position: -704px -1216px;
+}
+
+.mcui-sprite[data-id="trapped_chest"] {
+    background-position: -992px -3584px;
+}
+
+.mcui-sprite[data-id="hopper"] {
+    background-position: -160px -3424px;
+}
+
+/* Redstone */
+.mcui-sprite[data-id="tripwire_hook"] {
+    background-position: -800px -3328px;
+}
+
+/* Prismarine */
+.mcui-sprite[data-id="prismarine"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="prismarine_bricks"] {
+    background-position: -0px -0px;
+}
+
+.mcui-sprite[data-id="dark_prismarine"] {
+    background-position: -32px -3360px;
+}
+
+.mcui-sprite[data-id="sea_lantern"] {
+    background-image: url('images/sea_lantern.png');
+}
+
+/* The Nether */
+.mcui-sprite[data-id="soul_sand"] {
+    background-position: -864px -3360px;
+}
+
+/* Gems */
+.mcui-sprite[data-id="gold_ingot"] {
+    background-position: -800px -3488px;
+}
+
+.mcui-sprite[data-id="diamond"] {
+    background-position: -608px -3488px;
+}
+
+.mcui-sprite[data-id="emerald"] {
+    background-position: -640px -3488px;
+}
+
+/* Uncategorized */
+.mcui-sprite[data-id="end_portal"] {
+    background-position: -544px -992px;
+}
+
+.mcui-sprite[data-id="filled_map"] {
+    background-position: -64px -128px;
+}
+
+.mcui-sprite[data-id="netherite_helmet"] {
+    background-position: -480px -128px;
+}
+
+.mcui-sprite[data-id="trident"] {
+    background-position: -608px -1696px;
+}
+
+.mcui-sprite[data-id="wither_skeleton_skull"] {
+    background-position: -224px -960px;
+}
+
+.mcui-sprite[data-id="blaze_rod"] {
+    background-position: -448px -640px;
+}
+
+.mcui-sprite[data-id="prismarine_shard"] {
+    background-position: -160px -3520px;
+}
+
+.mcui-sprite[data-id="spruce_sapling"] {
+    background-position: -608px -3424px;
+}
+
+/* Custom */
+.mcui-sprite[data-id="eternalrealms:ether"] {
+    background-image: url('images/ether.png');
+}
+
+.mcui-sprite[data-id="dento:banner"] {
+    background-image: url('images/dento/banners.png');
+    background-position: 0px 0px;
+}
+
+.mcui-sprite[data-id="dento:new_withervale_banner"] {
+    background-image: url('images/dento/banners.png');
+    background-position: 0px -32px;
+}
