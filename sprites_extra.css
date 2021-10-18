@@ -1,0 +1,24 @@
+/* Prismarine */
+/* .mcui-sprite[data-id="sea_lantern"] {
+    background-image: url('images/sea_lantern.png');
+} */
+
+/* Uncategorized */
+.mcui-sprite[data-id="end_portal"] {
+    background-image: url('images/atlas1.png');
+    background-position: -544px -992px;
+}
+
+.mcui-sprite[data-id="filled_map"] {
+    background-image: url('images/atlas1.png');
+    background-position: -64px -128px;
+}
+
+.mcui-sprite[data-id="written_book"] {
+    background-image: url('images/written_book.gif');
+}
+
+.mcui-sprite[data-id="education:chalkboard_large"] {
+    background-image: url('images/atlas1.png');
+    background-position: -736px -1568px;
+}

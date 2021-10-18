@@ -1,3 +1,112 @@
+@font-face {
+    font-family: Minecraftia;
+    src: url('fonts/Minecraftia-Regular.ttf')
+}
+
+.mcui {
+    display: inline-block;
+    position: relative;
+    background-color: #c6c6c6;
+    border: 4px solid;
+    border-color: #dbdbdb #5b5b5b #5b5b5b #dbdbdb;
+    padding: 6px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+
+.mcui::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 2px solid #000;
+}
+
+.mcui-rounded {
+    border-radius: 8px;
+}
+
+.mcui-rounded::before {
+    border-radius: 8px;
+}
+
+.mcui-combined > * {
+    display: block;
+}
+
+.mcui-combined-horizontal > * {
+    display: inline-block;
+}
+
+.mcui-combined > .mcui-crafting {
+    padding-left: 40px;
+}
+
+.mcui-label {
+    display: block !important;
+    font-family: Minecraftia;
+    color: #3f3f3f;
+    font-size: 16px;
+}
+
+.mcui-label-large {
+    font-size: 24px;
+}
+
+.pixelart {
+    image-rendering: crisp-edges;
+}
+
+.tooltip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #100010;
+    background-color: rgba(16, 0, 16, 0.94);
+    padding: 0.375em;
+    font-family: Minecraftia;
+    font-size: 16px;
+    word-spacing: 4px;
+    white-space: nowrap;
+    line-height: 1.25em;;
+    color: #fff;
+    text-shadow: 0.125em 0.125em 0 #3f3f3f;
+    margin: 0.125em 0.125em;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.tooltip::before {
+    content: "";
+    position: absolute;
+    top: 0.125em;
+    right: -0.125em;
+    bottom: 0.125em;
+    left: -0.125em;
+    border: 0.125em solid #100010;
+    border-style: none solid;
+    border-color: rgba(16, 0, 16, 0.94)
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 0.125em;
+    right: 0;
+    bottom: 0.125em;
+    left: 0;
+    border: 0.125em solid #2d0a63;
+    border-image: linear-gradient(rgba(80,0,255,0.31),rgba(40,0,127,0.31)) 1
+}
+
+.tooltip > .description {
+    display: block;
+    margin-top: 0.25em;
+}
 
 .mcui-sprite {
     width: 32px;
@@ -6155,3 +6264,641 @@
     background-position: -384px -1216px;
 }
 
+/* Prismarine */
+/* .mcui-sprite[data-id="sea_lantern"] {
+    background-image: url('images/sea_lantern.png');
+} */
+
+/* Uncategorized */
+.mcui-sprite[data-id="end_portal"] {
+    background-image: url('images/atlas1.png');
+    background-position: -544px -992px;
+}
+
+.mcui-sprite[data-id="filled_map"] {
+    background-image: url('images/atlas1.png');
+    background-position: -64px -128px;
+}
+
+.mcui-sprite[data-id="written_book"] {
+    background-image: url('images/written_book.gif');
+}
+
+.mcui-sprite[data-id="education:chalkboard_large"] {
+    background-image: url('images/atlas1.png');
+    background-position: -736px -1568px;
+}
+.mcui-inventory .mcui-inventory-row {
+    display: block;
+}
+
+.mcui-inventory-hotbar {
+    padding-top: 8px;
+}
+
+.mcui-inventory-slot {
+    position: relative;
+    display: inline-block;
+    background: #8b8b8b no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #fff #fff #373737;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.mcui-inventory-slot::before, .mcui-inventory-slot::after {
+    content: "";
+    position: absolute;
+    background-color: #8b8b8b;
+    height: 2px;
+    width: 2px;
+    pointer-events: none;
+}
+
+.mcui-inventory-slot::before {
+    bottom: -2px;
+    left: -2px;
+}
+
+.mcui-inventory-slot::after {
+    top: -2px;
+    right: -2px;
+}
+
+.mcui-inventory-slot-large {
+    padding: 8px;
+}
+
+.mcui-inventory-item {
+    position: relative;
+    display: block;
+    margin: -2px;
+    padding: 2px;
+    width: 32px;
+    height: 32px;
+}
+
+.mcui-inventory-stacksize {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: Minecraftia, sans-serif !important;
+    font-weight: normal !important;
+    color: #fff !important;
+    text-shadow: 2px 2px 0 #3f3f3f;
+    z-index: 2;
+}
+.mcui-crafting > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mcui-crafting .mcui-inventory-row {
+    display: block;
+}
+
+.mcui-crafting-arrow {
+    background: url('images/crafting_arrow_long.png') no-repeat;
+    width: 48px;
+    height: 32px;
+    margin: 40px 8px 0;
+}
+
+.mcui-crafting-output {
+    margin-top: 28px;
+}
+
+.mcui-crafting .mcui-icons {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+.mcui-crafting .mcui-shapeless {
+    display: inline-block;
+    background-image: url('images/shapeless.png');
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 15px;
+    cursor: help;
+}
+.mcui-trading {
+    background: #8b8b8b no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #fff #fff #373737;
+}
+
+.mcui-trade > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mcui-trade {
+    background: url('images/trade_bg.png') no-repeat;
+    width: 176px;
+    height: 40px;
+    display: block;
+}
+
+.mcui-trade-item {
+    position: relative;
+    display: inline-block;
+    top: 2px;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.trade-item-one {
+    margin-left: 12px;
+}
+
+.trade-item-two {
+    margin-left: 16px;
+}
+
+.mcui-trade-arrow {
+    background: url('images/trade_arrow.png') no-repeat;
+    width: 20px;
+    height: 19px;
+    margin:10px 4px 0;
+}
+@keyframes prismarine-gunpowder {
+
+    50% {
+        background-position: -160px -3520px;
+    }
+
+    to {
+        background-position: -864px -3488px;
+    }
+}
+
+.prismarine-gunpowder {
+    animation-name: prismarine-gunpowder;
+    animation-duration: 2s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes blaze-barter {
+
+    50% {
+        background-position: -448px -640px;
+    }
+
+    to {
+        background-position: -320px -2496px;
+    }
+}
+
+.blaze-barter {
+    animation-name: blaze-barter;
+    animation-duration: 2s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-beds {
+
+    6.25% {
+        background-position: -480px -3168px;
+    }
+
+    12.5% {
+        background-position: -64px -3168px;
+    }
+
+    18.75% {
+        background-position: -512px -3168px;
+    }
+
+    25% {
+        background-position: -384px -3168px;
+    }
+
+    31.25% {
+        background-position: -352px -3168px;
+    }
+
+    37.5% {
+        background-position: -256px -3168px;
+    }
+
+    43.75% {
+        background-position: -544px -3168px;
+    }
+
+    50% {
+        background-position: -320px -3168px;
+    }
+
+    56.25% {
+        background-position: -416px -3168px;
+    }
+
+    62.5% {
+        background-position: -192px -3168px;
+    }
+
+    68.75% {
+        background-position: -288px -3168px;
+    }
+
+    75% {
+        background-position: -160px -3168px;
+    }
+
+    81.25% {
+        background-position: -448px -3168px;
+    }
+
+    87.5% {
+        background-position: -96px -3168px;
+    }
+
+    93.75% {
+        background-position: -128px -3168px;
+    }
+
+    to {
+        background-position: -224px -3168px;
+    }
+}
+
+.mcui-all-beds {
+    animation-name: all-beds;
+    animation-duration: 16s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-skulls {
+
+    16.667% {
+        background-position: -192px -960px;
+    }
+
+    33.333% {
+        background-position: -224px -960px;
+    }
+
+    50% {
+        background-position: -160px -960px;
+    }
+
+    66.667% {
+        background-position: -256px -960px;
+    }
+
+    83.333% {
+        background-position: -96px -960px;
+    }
+
+    to {
+        background-position: -128px -960px;
+    }
+}
+
+.mcui-all-skulls {
+    animation-name: all-skulls;
+    animation-duration: 6s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-ores {
+    10% {
+        background-position: -992px -3360px;
+    }
+
+    20% {
+        background-position: -0px -3392px;
+    }
+
+    30% {
+        background-position: -800px -3360px;
+    }
+
+    40% {
+        background-position: -288px -192px;
+    }
+
+    50% {
+        background-position: -160px -128px;
+    }
+
+    60% {
+        background-position: -960px -3360px;
+    }
+
+    70% {
+        background-position: -64px -3392px;
+    }
+
+    80% {
+        background-position: -96px -3392px;
+    }
+
+    90% {
+        background-position: -32px -3392px;
+    }
+
+    to {
+        background-position: -128px -3392px;
+    }
+}
+
+.mcui-all-ores {
+    animation-name: all-ores;
+    animation-duration: 10s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-signs {
+    12.5% {
+        background-position: -896px -3360px;
+    }
+
+    25% {
+        background-position: -800px -2368px;
+    }
+
+    37.5% {
+        background-position: -768px -2368px;
+    }
+
+    50% {
+        background-position: -832px -2368px;
+    }
+
+    62.5% {
+        background-position: -864px -2368px;
+    }
+
+    75% {
+        background-position: -896px -2368px;
+    }
+
+    87.5% {
+        background-position: -512px -160px;
+    }
+
+    to {
+        background-position: -544px -160px;
+    }
+}
+
+.mcui-all-signs {
+    animation-name: all-signs;
+    animation-duration: 8s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-trapdoors {
+    11.111% {
+        background-position: -928px -928px;
+    }
+
+    22.222% {
+        background-position: -448px -1632px;
+    }
+
+    33.333% {
+        background-position: -480px -1632px;
+    }
+
+    44.444% {
+        background-position: -512px -1632px;
+    }
+
+    55.556% {
+        background-position: -544px -1632px;
+    }
+
+    66.667% {
+        background-position: -576px -1632px;
+    }
+
+    77.778% {
+        background-position: -288px -160px;
+    }
+
+    88.889% {
+        background-position: -416px -160px;
+    }
+
+    to {
+        background-position: -416px -928px;
+    }
+}
+
+.mcui-all-trapdoors {
+    animation-name: all-trapdoors;
+    animation-duration: 9s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-fence-gates {
+    12.5% {
+        background-position: -576px -3264px;
+    }
+
+    25% {
+        background-position: -608px -3296px;
+    }
+
+    37.5% {
+        background-position: -896px -3200px;
+    }
+
+    50% {
+        background-position: -64px -3264px;
+    }
+
+    62.5% {
+        background-position: -640px -3200px;
+    }
+
+    75% {
+        background-position: -576px -3232px;
+    }
+
+    87.5% {
+        background-position: -576px -160px;
+    }
+
+    to {
+        background-position: -608px -160px;
+    }
+}
+
+.mcui-all-fence-gates {
+    animation-name: all-fence-gates;
+    animation-duration: 8s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-fences {
+    11.111% {
+        background-position: -608px -3264px;
+    }
+
+    22.222% {
+        background-position: -640px -3296px;
+    }
+
+    33.333% {
+        background-position: -928px -3200px;
+    }
+
+    44.444% {
+        background-position: -96px -3264px;
+    }
+
+    55.556% {
+        background-position: -672px -3200px;
+    }
+
+    66.667% {
+        background-position: -608px -3232px;
+    }
+
+    77.778% {
+        background-position: -0px -160px;
+    }
+
+    88.889% {
+        background-position: -96px -160px;
+    }
+
+    to {
+        background-position: -704px -3360px;
+    }
+}
+
+.mcui-all-fences {
+    animation-name: all-fences;
+    animation-duration: 9s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}.mcui-playerbox-container > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mcui-playerbox {
+    background: #000 no-repeat center center / 32px 32px;
+    width: 98px;
+    height: 140px;
+
+    border: 2px solid;
+    border-color: #373737 #fff #fff #373737;
+    display: block;
+}
+
+.mcui-player {
+    background-size: 60px 135px;
+    background-position: center;
+    width: 98px;
+    height: 140px;
+
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.mcui-playerbox-large {
+    width: 196px;
+    height: 280px;
+}
+
+.mcui-player-large {
+    background-size: 120px 270px;
+    width: 196px;
+    height: 280px;
+}
+
+
+/* Player Renders */
+.mcui-player[data-name="compaqdisc"] {
+    background-image: url('https://crafatar.com/renders/body/e4f585b4-0638-49da-94ec-efcedc7d7b98.png?overlay');
+}
+
+.mcui-player[data-name="bynsy"] {
+    background-image: url('https://crafatar.com/renders/body/44f62f3c-2990-47ba-8aee-d78fca0de9af.png?overlay');
+}
+
+.mcui-player[data-name="chardroid"] {
+    background-image: url('https://crafatar.com/renders/body/d72f16c1-6f78-4cac-80b2-8f3724d7997f.png?overlay');
+}
+
+.mcui-player[data-name="wlcrimson"] {
+    background-image: url('https://crafatar.com/renders/body/2605cfb2-149f-4cae-98db-efee1d78a6f5.png?overlay');
+}
+
+.mcui-player[data-name="godephidel"] {
+    background-image: url('https://crafatar.com/renders/body/c2db7bca-30db-49c4-9d63-01150e69f901.png?overlay');
+}
+
+.mcui-player[data-name="katman909"] {
+    background-image: url('https://crafatar.com/renders/body/5c960657-f3f8-482d-b31e-f448ebb58310.png?overlay');
+}
+
+/* Custom Item Sprites */
+.mcui-sprite[data-id="eternalrealms:ether"] {
+    background-image: url('images/ether.png');
+}
+
+.mcui-sprite[data-id="eternalrealms:logo"] {
+    background-image: url('images/erlogo.png');
+}
+
+.mcui-sprite[data-id="dento:banner"] {
+    background-image: url('images/banners.png');
+    background-position: 0px 0px;
+}
+
+.mcui-sprite[data-id="dento:new_withervale_banner"] {
+    background-image: url('images/banners.png');
+    background-position: -32px 0px;
+}
+
+.mcui-sprite[data-id="dento:pirate_banner"] {
+    background-image: url('images/banners.png');
+    background-position: -64px 0px;
+}
+
+.mcui-sprite[data-id="citizens:compaqdisc"] {
+    background-image: url('https://cravatar.eu/helmhead/e4f585b4-0638-49da-94ec-efcedc7d7b98/32.png');
+}
+
+.mcui-sprite[data-id="citizens:bynsy"] {
+    background-image: url('https://cravatar.eu/helmhead/44f62f3c-2990-47ba-8aee-d78fca0de9af/32.png');
+}
+
+.mcui-sprite[data-id="citizens:chardroid"] {
+    background-image: url('https://cravatar.eu/helmhead/d72f16c1-6f78-4cac-80b2-8f3724d7997f/32.png');
+}
+
+.mcui-sprite[data-id="citizens:wlcrimson"] {
+    background-image: url('https://cravatar.eu/helmhead/2605cfb2-149f-4cae-98db-efee1d78a6f5/32.png');
+}
+
+.mcui-sprite[data-id="citizens:godephidel"] {
+    background-image: url('https://cravatar.eu/helmhead/c2db7bca-30db-49c4-9d63-01150e69f901/32.png');
+}
+
+.mcui-sprite[data-id="citizens:katman909"] {
+    background-image: url('https://cravatar.eu/helmhead/5c960657-f3f8-482d-b31e-f448ebb58310/32.png');
+}

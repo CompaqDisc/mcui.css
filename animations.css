@@ -33,3 +33,332 @@
     animation-timing-function: steps(1, start);
     animation-iteration-count: infinite;
 }
+
+@keyframes all-beds {
+
+    6.25% {
+        background-position: -480px -3168px;
+    }
+
+    12.5% {
+        background-position: -64px -3168px;
+    }
+
+    18.75% {
+        background-position: -512px -3168px;
+    }
+
+    25% {
+        background-position: -384px -3168px;
+    }
+
+    31.25% {
+        background-position: -352px -3168px;
+    }
+
+    37.5% {
+        background-position: -256px -3168px;
+    }
+
+    43.75% {
+        background-position: -544px -3168px;
+    }
+
+    50% {
+        background-position: -320px -3168px;
+    }
+
+    56.25% {
+        background-position: -416px -3168px;
+    }
+
+    62.5% {
+        background-position: -192px -3168px;
+    }
+
+    68.75% {
+        background-position: -288px -3168px;
+    }
+
+    75% {
+        background-position: -160px -3168px;
+    }
+
+    81.25% {
+        background-position: -448px -3168px;
+    }
+
+    87.5% {
+        background-position: -96px -3168px;
+    }
+
+    93.75% {
+        background-position: -128px -3168px;
+    }
+
+    to {
+        background-position: -224px -3168px;
+    }
+}
+
+.mcui-all-beds {
+    animation-name: all-beds;
+    animation-duration: 16s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-skulls {
+
+    16.667% {
+        background-position: -192px -960px;
+    }
+
+    33.333% {
+        background-position: -224px -960px;
+    }
+
+    50% {
+        background-position: -160px -960px;
+    }
+
+    66.667% {
+        background-position: -256px -960px;
+    }
+
+    83.333% {
+        background-position: -96px -960px;
+    }
+
+    to {
+        background-position: -128px -960px;
+    }
+}
+
+.mcui-all-skulls {
+    animation-name: all-skulls;
+    animation-duration: 6s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-ores {
+    10% {
+        background-position: -992px -3360px;
+    }
+
+    20% {
+        background-position: -0px -3392px;
+    }
+
+    30% {
+        background-position: -800px -3360px;
+    }
+
+    40% {
+        background-position: -288px -192px;
+    }
+
+    50% {
+        background-position: -160px -128px;
+    }
+
+    60% {
+        background-position: -960px -3360px;
+    }
+
+    70% {
+        background-position: -64px -3392px;
+    }
+
+    80% {
+        background-position: -96px -3392px;
+    }
+
+    90% {
+        background-position: -32px -3392px;
+    }
+
+    to {
+        background-position: -128px -3392px;
+    }
+}
+
+.mcui-all-ores {
+    animation-name: all-ores;
+    animation-duration: 10s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-signs {
+    12.5% {
+        background-position: -896px -3360px;
+    }
+
+    25% {
+        background-position: -800px -2368px;
+    }
+
+    37.5% {
+        background-position: -768px -2368px;
+    }
+
+    50% {
+        background-position: -832px -2368px;
+    }
+
+    62.5% {
+        background-position: -864px -2368px;
+    }
+
+    75% {
+        background-position: -896px -2368px;
+    }
+
+    87.5% {
+        background-position: -512px -160px;
+    }
+
+    to {
+        background-position: -544px -160px;
+    }
+}
+
+.mcui-all-signs {
+    animation-name: all-signs;
+    animation-duration: 8s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-trapdoors {
+    11.111% {
+        background-position: -928px -928px;
+    }
+
+    22.222% {
+        background-position: -448px -1632px;
+    }
+
+    33.333% {
+        background-position: -480px -1632px;
+    }
+
+    44.444% {
+        background-position: -512px -1632px;
+    }
+
+    55.556% {
+        background-position: -544px -1632px;
+    }
+
+    66.667% {
+        background-position: -576px -1632px;
+    }
+
+    77.778% {
+        background-position: -288px -160px;
+    }
+
+    88.889% {
+        background-position: -416px -160px;
+    }
+
+    to {
+        background-position: -416px -928px;
+    }
+}
+
+.mcui-all-trapdoors {
+    animation-name: all-trapdoors;
+    animation-duration: 9s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-fence-gates {
+    12.5% {
+        background-position: -576px -3264px;
+    }
+
+    25% {
+        background-position: -608px -3296px;
+    }
+
+    37.5% {
+        background-position: -896px -3200px;
+    }
+
+    50% {
+        background-position: -64px -3264px;
+    }
+
+    62.5% {
+        background-position: -640px -3200px;
+    }
+
+    75% {
+        background-position: -576px -3232px;
+    }
+
+    87.5% {
+        background-position: -576px -160px;
+    }
+
+    to {
+        background-position: -608px -160px;
+    }
+}
+
+.mcui-all-fence-gates {
+    animation-name: all-fence-gates;
+    animation-duration: 8s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@keyframes all-fences {
+    11.111% {
+        background-position: -608px -3264px;
+    }
+
+    22.222% {
+        background-position: -640px -3296px;
+    }
+
+    33.333% {
+        background-position: -928px -3200px;
+    }
+
+    44.444% {
+        background-position: -96px -3264px;
+    }
+
+    55.556% {
+        background-position: -672px -3200px;
+    }
+
+    66.667% {
+        background-position: -608px -3232px;
+    }
+
+    77.778% {
+        background-position: -0px -160px;
+    }
+
+    88.889% {
+        background-position: -96px -160px;
+    }
+
+    to {
+        background-position: -704px -3360px;
+    }
+}
+
+.mcui-all-fences {
+    animation-name: all-fences;
+    animation-duration: 9s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}

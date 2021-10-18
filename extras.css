@@ -1,0 +1,113 @@
+.mcui-playerbox-container > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mcui-playerbox {
+    background: #000 no-repeat center center / 32px 32px;
+    width: 98px;
+    height: 140px;
+
+    border: 2px solid;
+    border-color: #373737 #fff #fff #373737;
+    display: block;
+}
+
+.mcui-player {
+    background-size: 60px 135px;
+    background-position: center;
+    width: 98px;
+    height: 140px;
+
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.mcui-playerbox-large {
+    width: 196px;
+    height: 280px;
+}
+
+.mcui-player-large {
+    background-size: 120px 270px;
+    width: 196px;
+    height: 280px;
+}
+
+
+/* Player Renders */
+.mcui-player[data-name="compaqdisc"] {
+    background-image: url('https://crafatar.com/renders/body/e4f585b4-0638-49da-94ec-efcedc7d7b98.png?overlay');
+}
+
+.mcui-player[data-name="bynsy"] {
+    background-image: url('https://crafatar.com/renders/body/44f62f3c-2990-47ba-8aee-d78fca0de9af.png?overlay');
+}
+
+.mcui-player[data-name="chardroid"] {
+    background-image: url('https://crafatar.com/renders/body/d72f16c1-6f78-4cac-80b2-8f3724d7997f.png?overlay');
+}
+
+.mcui-player[data-name="wlcrimson"] {
+    background-image: url('https://crafatar.com/renders/body/2605cfb2-149f-4cae-98db-efee1d78a6f5.png?overlay');
+}
+
+.mcui-player[data-name="godephidel"] {
+    background-image: url('https://crafatar.com/renders/body/c2db7bca-30db-49c4-9d63-01150e69f901.png?overlay');
+}
+
+.mcui-player[data-name="katman909"] {
+    background-image: url('https://crafatar.com/renders/body/5c960657-f3f8-482d-b31e-f448ebb58310.png?overlay');
+}
+
+/* Custom Item Sprites */
+.mcui-sprite[data-id="eternalrealms:ether"] {
+    background-image: url('images/ether.png');
+}
+
+.mcui-sprite[data-id="eternalrealms:logo"] {
+    background-image: url('images/erlogo.png');
+}
+
+.mcui-sprite[data-id="dento:banner"] {
+    background-image: url('images/banners.png');
+    background-position: 0px 0px;
+}
+
+.mcui-sprite[data-id="dento:new_withervale_banner"] {
+    background-image: url('images/banners.png');
+    background-position: -32px 0px;
+}
+
+.mcui-sprite[data-id="dento:pirate_banner"] {
+    background-image: url('images/banners.png');
+    background-position: -64px 0px;
+}
+
+.mcui-sprite[data-id="coins:copper_coin_4"] {
+    background-image: url('images/coins/copper_coin_4.png');
+}
+
+.mcui-sprite[data-id="citizens:compaqdisc"] {
+    background-image: url('https://cravatar.eu/helmhead/e4f585b4-0638-49da-94ec-efcedc7d7b98/32.png');
+}
+
+.mcui-sprite[data-id="citizens:bynsy"] {
+    background-image: url('https://cravatar.eu/helmhead/44f62f3c-2990-47ba-8aee-d78fca0de9af/32.png');
+}
+
+.mcui-sprite[data-id="citizens:chardroid"] {
+    background-image: url('https://cravatar.eu/helmhead/d72f16c1-6f78-4cac-80b2-8f3724d7997f/32.png');
+}
+
+.mcui-sprite[data-id="citizens:wlcrimson"] {
+    background-image: url('https://cravatar.eu/helmhead/2605cfb2-149f-4cae-98db-efee1d78a6f5/32.png');
+}
+
+.mcui-sprite[data-id="citizens:godephidel"] {
+    background-image: url('https://cravatar.eu/helmhead/c2db7bca-30db-49c4-9d63-01150e69f901/32.png');
+}
+
+.mcui-sprite[data-id="citizens:katman909"] {
+    background-image: url('https://cravatar.eu/helmhead/5c960657-f3f8-482d-b31e-f448ebb58310/32.png');
+}

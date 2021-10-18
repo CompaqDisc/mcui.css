@@ -38,6 +38,10 @@
     display: block;
 }
 
+.mcui-combined-horizontal > * {
+    display: inline-block;
+}
+
 .mcui-combined > .mcui-crafting {
     padding-left: 40px;
 }
@@ -45,8 +49,12 @@
 .mcui-label {
     display: block !important;
     font-family: Minecraftia;
-    color: #000;
+    color: #3f3f3f;
     font-size: 16px;
+}
+
+.mcui-label-large {
+    font-size: 24px;
 }
 
 .pixelart {
